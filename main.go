@@ -69,14 +69,6 @@ func writer(in <-chan imageHolder, out chan<- int) { // read from channel and wr
 	close(out)
 }
 
-// initialization
-func init() {
-
-	// in newest versions of golang it is no longer needed to indicate the maximum
-	// number of cpu's that should be used
-	// runtime.GOMAXPROCS(runtime.NumCPU()) // runs with max number of cpus available
-
-}
 
 // test pipeline without writing to file
 func main() {
